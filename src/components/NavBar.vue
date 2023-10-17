@@ -4,15 +4,35 @@
   <div
     class="container-fluid flex flex-col sm:flex-row justify-around absolute bottom-0 right-0 left-0"
   >
-    <div class="px-4 py-4 border-2 border-black w-full">INTRO</div>
-    <div class="px-4 py-4 border-2 border-black w-full">ABOUT ME</div>
-    <div
+    <!-- INTRODUCTION -->
+    <router-link
+      to="/Introduction"
+      class="px-4 py-4 border-2 border-black w-full"
+      >INTRO</router-link
+    >
+
+    <!-- ABOUT ME -->
+    <router-link to="/About" class="px-4 py-4 border-2 border-black w-full"
+      >ABOUT ME</router-link
+    >
+
+    <!-- LOGO -->
+    <router-link
+      to="/"
       class="px-4 py-4 border-2 border-black bg-black w-full sm:w-80 order-first sm:order-none"
     >
       IMG
-    </div>
-    <div class="px-4 py-4 border-2 border-black w-full">EXPERIENCE</div>
-    <div class="px-4 py-4 border-2 border-black w-full">CONTACT</div>
+    </router-link>
+
+    <!-- EXPERIENCE -->
+    <router-link to="/Experience" class="px-4 py-4 border-2 border-black w-full"
+      >EXPERIENCE</router-link
+    >
+
+    <!-- CONTACT -->
+    <router-link to="/Contact" class="px-4 py-4 border-2 border-black w-full"
+      >CONTACT</router-link
+    >
   </div>
 </template>
 

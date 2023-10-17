@@ -3,7 +3,7 @@ import NavBar from '@/components/NavBar.vue'
 </script>
 
 <template>
-  hola soy default
+  <router-view />
 
   <NavBar />
 </template>
