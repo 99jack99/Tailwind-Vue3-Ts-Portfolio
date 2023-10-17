@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="container-fluid flex flex-col sm:flex-row justify-around absolute bottom-0 right-0 left-0"
+    class="container-fluid bg-white flex flex-col sm:flex-row justify-around sticky bottom-0 right-0 left-0"
   >
     <!-- INTRODUCTION -->
     <router-link
