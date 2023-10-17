@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
-<template>hola</template>
+<template>Hola soy Contact</template>
 
 <style lang="scss" scoped></style>

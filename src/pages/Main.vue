@@ -15,17 +15,17 @@
       </div>
 
       <div
-        class="truncate md:text-clip h-48 md:h-auto md:row-span-2 md:col-span-1 border-4 border-black grid place-content-center hover:bg-gradient-to-r hover:from-amber-500 hover:to-orange-500"
+        class="truncate md:text-clip h-48 md:h-auto md:row-span-2 md:col-span-1 border-4 cursor-pointer border-black grid place-content-center hover:bg-gradient-to-r hover:from-amber-500 hover:to-orange-500"
       >
         <h1 class="text-5xl md:text-6xl font-semibold">EXPERIENCE</h1>
       </div>
 
       <div
-        class="h-48 md:h-auto border-4 border-black img bg-center bg-cover bg-no-repeat order-first md:order-none"
+        class="h-48 md:h-auto border-4 border-black img bg-center bg-cover bg-no-repeat order-first md:order-none cursor-pointer hover:grayscale"
       ></div>
 
       <div
-        class="h-48 md:h-auto md:row-span-1 md:col-span-2 border-4 border-black grid place-content-center hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-500"
+        class="h-48 md:h-auto md:row-span-1 md:col-span-2 border-4 cursor-pointer border-black grid place-content-center hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-500"
       >
         <h1 class="text-5xl md:text-6xl font-semibold">CONTACT</h1>
       </div>
