@@ -7,30 +7,43 @@
     <!-- INTRODUCTION -->
     <router-link
       to="/Introduction"
-      class="px-4 py-4 border-2 border-black w-full"
+      class="px-4 py-4 border-2 border-black w-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 font-semibold"
       >INTRO</router-link
     >
 
     <!-- ABOUT ME -->
-    <router-link to="/About" class="px-4 py-4 border-2 border-black w-full"
+    <router-link
+      to="/About"
+      class="px-4 py-4 border-2 border-black w-full hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 font-semibold"
       >ABOUT ME</router-link
     >
 
     <!-- LOGO -->
-    <router-link
+    <!-- <router-link
       to="/"
       class="px-4 py-4 border-2 border-black bg-black w-full sm:w-80 order-first sm:order-none"
     >
-      IMG
+      <img src="@/assets/imgs/guy.jpg" class="object-cover" />
+    </router-link> -->
+
+    <router-link
+      to="/"
+      class="border-2 border-black bg-black w-full sm:w-80 order-first sm:order-none"
+    >
+      <img src="@/assets/imgs/guy.jpg" class="object-center object-cover" />
     </router-link>
 
     <!-- EXPERIENCE -->
-    <router-link to="/Experience" class="px-4 py-4 border-2 border-black w-full"
+    <router-link
+      to="/Experience"
+      class="px-4 py-4 border-2 border-black w-full hover:bg-gradient-to-r hover:from-amber-500 hover:to-orange-500 font-semibold"
       >EXPERIENCE</router-link
     >
 
     <!-- CONTACT -->
-    <router-link to="/Contact" class="px-4 py-4 border-2 border-black w-full"
+    <router-link
+      to="/Contact"
+      class="px-4 py-4 border-2 border-black w-full hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-500 font-semibold"
       >CONTACT</router-link
     >
   </div>

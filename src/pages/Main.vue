@@ -30,7 +30,7 @@
       <!-- PHOTO -->
       <router-link
         to="/"
-        class="h-48 md:h-auto border-4 border-black img bg-center bg-cover bg-no-repeat order-first md:order-none cursor-pointer hover:grayscale"
+        class="h-48 md:h-auto border-4 border-black bg-[url(../assets/imgs/guy.jpg)] bg-center bg-cover bg-no-repeat order-first md:order-none cursor-pointer hover:grayscale"
       ></router-link>
 
       <!-- CONTACT -->
@@ -44,8 +44,4 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-.img {
-  background-image: url(../assets/imgs/guy.jpg);
-}
-</style>
+<style lang="scss" scoped></style>

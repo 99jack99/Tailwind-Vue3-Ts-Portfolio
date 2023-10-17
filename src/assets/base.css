@@ -12,6 +12,16 @@
   src: url('@/assets/fonts/space.ttf');
 }
 
+@font-face {
+  font-family: 'chalmone';
+  src: url('@/assets/fonts/chalmone.ttf');
+}
+
+@font-face {
+  font-family: 'organical';
+  src: url('@/assets/fonts/organical.ttf');
+}
+
 *,
 *::before,
 *::after {
