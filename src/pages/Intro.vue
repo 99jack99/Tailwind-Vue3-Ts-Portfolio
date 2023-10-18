@@ -55,11 +55,11 @@
     >
       <div class="h-96 w-80">
         <div
-          class="h-4/5 bg-[url(../assets/imgs/per.jpg)] bg-cover bg-right border-4"
+          class="h-4/5 bg-[url(../assets/imgs/lucas.jpg)] bg-cover bg-right rounded-sm"
         ></div>
         <div class="h-1/5 flex flex-col justify-center p-1 mt-4">
-          <div class="text-2xl font-semibold">Lana Effors</div>
-          <div class="text-2xl font-thin">22, Software Developer</div>
+          <div class="text-2xl font-semibold">Lucas Drove</div>
+          <div class="text-2xl font-thin">27, Front-end Developer</div>
         </div>
       </div>
 
