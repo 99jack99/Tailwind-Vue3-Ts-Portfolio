@@ -38,7 +38,8 @@ body{
 }
 
 .router-link-active{
-  background-color: aqua;
+  /* background-color: aqua; */
+  @apply bg-indigo-600 text-white
 }
 
 
