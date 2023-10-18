@@ -13,9 +13,9 @@
 
     <!-- ABOUT ME -->
     <router-link
-      to="/About"
+      to="/Project"
       class="px-4 py-4 border-2 border-black w-full hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 font-semibold"
-      >ABOUT ME</router-link
+      >PROJECTS</router-link
     >
 
     <!-- LOGO -->

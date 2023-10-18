@@ -23,7 +23,7 @@
             class="border-2 border-black p-2 w-80"
           />
         </div>
-        <div class="flex flex-col mt-10">
+        <div class="flex flex-col mt-5">
           <label for="name">Email</label>
           <input
             name="name"
@@ -31,7 +31,7 @@
             class="border-2 border-black p-2 w-80"
           />
         </div>
-        <div class="flex flex-col mt-10">
+        <div class="flex flex-col mt-5">
           <label for="name">Message</label>
           <input
             name="name"
@@ -40,7 +40,7 @@
           />
         </div>
         <div
-          class="mt-10 p-2 bg-black text-white flex items-center justify-center w-24"
+          class="mt-10 text-2xl px-4 py-2 bg-black text-white flex items-center justify-center w-max"
         >
           Submit
         </div>
