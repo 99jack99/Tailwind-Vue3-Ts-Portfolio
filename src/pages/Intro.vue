@@ -16,42 +16,26 @@
         pages.
       </div>
 
-      <div
-        class="w-full flex flex-col sm:flex-row items-center sm:items-start sm:justify-around mt-5 sm:m-0"
-      >
-        <div class="flex flex-col">
-          <div class="flex items-center justify-start my-3 sm:mb-4">
-            <img src="@/assets/icons/vue.svg" class="h-10 w-10" alt="" />
-            <div class="ml-2 text-lg font-semibold">Vue.js</div>
-          </div>
-          <div class="flex items-center justify-start my-3 sm:mb-4">
-            <img src="@/assets/icons/ts.svg" class="h-10 w-10" alt="" />
-            <div class="ml-2 text-lg font-semibold">Typescript</div>
-          </div>
-          <div class="flex items-center justify-start my-3 sm:mb-4">
-            <img src="@/assets/icons/js.svg" class="h-10 w-10" alt="" />
-            <div class="ml-2 text-lg font-semibold">Javascript</div>
-          </div>
-        </div>
-        <div class="flex flex-col">
-          <div class="flex items-center justify-start my-3 sm:mb-4">
-            <img src="@/assets/icons/tailwind.svg" class="h-10 w-10" alt="" />
-            <div class="ml-2 text-lg font-semibold">Tailwind</div>
-          </div>
-          <div class="flex items-center justify-start my-3 sm:mb-4">
-            <img src="@/assets/icons/vue.svg" class="h-10 w-10" alt="" />
-            <div class="ml-2 text-lg font-semibold">Vue.js</div>
-          </div>
-          <div class="flex items-center justify-start my-3 sm:mb-4">
-            <img src="@/assets/icons/vue.svg" class="h-10 w-10" alt="" />
-            <div class="ml-2 text-lg font-semibold">Vue.js</div>
-          </div>
+      <div class="w-full m-0 relative font-chalmone bg-slate-300">
+        <video
+          class="border-4 border-black grayscale absolute top-0 left-0 h-min"
+          autoplay
+          muted
+          loop
+        >
+          <source src="@/assets/imgs/mini.mp4" type="video/mp4" />
+        </video>
+
+        <h1 class="absolute top-2 left-2 ml-10 text-9xl">Less</h1>
+        <h1 class="absolute top-8 left-8 ml-10 text-6xl">is</h1>
+        <div class="absolute top-12 left-16 ml-12 text-9xl text-cyan-900">
+          <span class="line-through">MORE</span><span> better</span>
         </div>
       </div>
     </div>
 
     <div
-      class="flex flex-col items-center sm:flex-row justify-around sm:items-start w-full mt-5 sm:mt-10"
+      class="flex flex-col items-center sm:flex-row justify-around sm:items-start w-full mt-5 sm:mt-20"
     >
       <div class="h-96 w-80">
         <div
@@ -67,17 +51,23 @@
         <div
           class="bg-black border-4 border-black h-32 flex items-center justify-start cursor-crosshair"
         >
-          <h1 class="text-6xl font-semibold ml-4 text-white">VIDEOGAMES*</h1>
+          <h1 class="text-5xl sm:text-6xl font-semibold ml-4 text-white">
+            VIDEOGAMES*
+          </h1>
         </div>
         <div
           class="bg-black border-4 border-black h-32 my-10 flex items-center justify-start cursor-crosshair"
         >
-          <h1 class="text-6xl font-semibold ml-4 text-white">SPORTS*</h1>
+          <h1 class="text-5xl sm:text-6xll font-semibold ml-4 text-white">
+            SPORTS*
+          </h1>
         </div>
         <div
           class="bg-black border-4 border-black h-32 flex items-center justify-start cursor-crosshair"
         >
-          <h1 class="text-6xl font-semibold ml-4 text-white">LEARNING*</h1>
+          <h1 class="text-5xl sm:text-6xl font-semibold ml-4 text-white">
+            LEARNING*
+          </h1>
         </div>
       </div>
     </div>

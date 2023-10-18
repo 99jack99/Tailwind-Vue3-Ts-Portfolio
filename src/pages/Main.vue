@@ -16,7 +16,7 @@
         to="/Project"
         class="h-48 md:h-auto md:row-span-2 md:col-span-1 border-4 border-black grid place-content-center cursor-pointer hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500"
       >
-        <h1 class="text-5xl md:text-6xl font-semibold">Projects</h1>
+        <h1 class="text-5xl md:text-6xl font-semibold">PROJECTS</h1>
       </router-link>
 
       <!-- EXPERIENCE -->
