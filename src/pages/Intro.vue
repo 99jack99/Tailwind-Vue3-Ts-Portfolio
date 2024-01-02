@@ -33,11 +33,13 @@
           <source src="@/assets/imgs/mini.mp4" type="video/mp4" />
         </video>
 
-        <h1 class="absolute top-2 right-2 ml-10 text-8xl">Less</h1>
-        <h1 class="absolute top-16 right-8 ml-10 text-6xl text-[#a32404]">
+        <h1 class="absolute top-2 right-2 ml-10 text-8xl text-black">Less</h1>
+        <h1 class="absolute top-12 right-8 ml-10 text-6xl text-[#a32404]">
           is
         </h1>
-        <h1 class="absolute top-12 right-16 ml-12 text-8xl">Better</h1>
+        <h1 class="absolute top-16 right-16 ml-12 text-8xl text-black">
+          Better
+        </h1>
       </div>
     </div>
 

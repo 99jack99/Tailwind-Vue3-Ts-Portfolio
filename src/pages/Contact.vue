@@ -7,7 +7,7 @@
     >
       Lets connect!
     </div>
-    <div class="flex h-full">
+    <div class="flex-col h-full md:flex md:flex-row">
       <div
         class="border-4 border-black w-1/2 p-5 flex flex-col items-start bg-amber-400 pl-20 pt-20"
       >
