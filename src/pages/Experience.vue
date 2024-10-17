@@ -1,105 +1,64 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+
+let experiences = ref([
+  {
+    id: 1,
+    name: 'Company 1',
+    date: ['2021', '2019'],
+    position: 'Frontend developer',
+    description: 'Development of different features, and design systems',
+    image: '/src/assets/icons/google.svg'
+  },
+  {
+    id: 2,
+    name: 'Company 2',
+    date: ['2019', '2017'],
+    position: 'Frontend developer',
+    description: 'Development of different features, and design systems',
+    image: '/src/assets/icons/google.svg'
+  },
+  {
+    id: 3,
+    name: 'Company 3',
+    date: ['2017', '2013'],
+    position: 'Frontend developer',
+    description: 'Development of different features, and design systems',
+    image: '/src/assets/icons/google.svg'
+  }
+])
+</script>
 
 <template>
-  <div
-    class="container-fluid flex flex-col items-center min-h-screen p-10 bg-red-300"
-  >
+  <div class="container-fluid flex flex-col items-center min-h-screen p-10">
     <h1 class="text-7xl sm:text-9xl font-semibold font-organical">
       My job timeline
     </h1>
-    <div class="flex flex-col justify-center items-center bg-blue-300 w-full">
+    <div class="flex flex-col justify-center items-center w-full">
       <!-- CARD -->
       <div
-        class="bg-black min-w-sm max-w-md flex items-center mt-20 text-white p-5 rounded-md"
+        class="min-w-sm max-w-md flex items-center mt-20 p-5 border-4 border-black text-black"
+        v-for="work in experiences"
+        :key="work.id"
       >
         <div class="flex flex-col">
           <div
             class="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 p-1 rounded-lg"
           >
-            <img src="@/assets/icons/google.svg" class="h-10 w-10" alt="" />
-            <h1 class="text-xl font-semibold ml-4">Google Inc.</h1>
+            <img :src="work.image" class="h-10 w-10" alt="" />
+            <h1 class="text-xl font-semibold ml-4">{{ work.name }}</h1>
           </div>
 
-          <h2 class="italic text-lg">from 2019 till now</h2>
+          <h2 class="italic text-lg">
+            from {{ work.date[0] }} till {{ work.date[1] }}
+          </h2>
           <div class="inline mt-5">
             <span
               class="font-semibold relative z-0 before:content-[''] before:-z-10 before:absolute before:left-2 before:bottom-0 before:w-full before:h-3 before:bg-gradient-to-r before:from-cyan-500 before:to-blue-500"
-              >Software Engineer</span
+              >{{ work.position }}</span
             >
             -
-            <span>Software development in clients custom project</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD -->
-      <div
-        class="bg-black min-w-sm max-w-md relative flex items-center mt-20 text-white p-4 rounded-md"
-      >
-        <div class="flex flex-col">
-          <div
-            class="flex items-center bg-gradient-to-r from-violet-500 to-fuchsia-500 p-1 rounded-lg"
-          >
-            <img src="@/assets/icons/amazon.svg" class="h-10 w-10" alt="" />
-            <h1 class="text-xl font-semibold ml-4">Amazon Inc.</h1>
-          </div>
-
-          <h2 class="italic text-lg">from 2014 to 2009</h2>
-          <div class="inline mt-5">
-            <span
-              class="font-semibold relative z-0 before:content-[''] before:-z-10 before:absolute before:left-2 before:bottom-0 before:w-full before:h-3 before:bg-gradient-to-r before:from-cyan-500 before:to-blue-500"
-              >Software Engineer</span
-            >
-            -
-            <span>Software development in clients custom project</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- card -->
-      <div
-        class="bg-black min-w-sm max-w-md relative flex items-center text-white p-4 mt-20 rounded-md"
-      >
-        <div class="flex flex-col">
-          <div
-            class="flex items-center bg-gradient-to-r from-amber-500 to-orange-500 p-1 rounded-lg"
-          >
-            <img src="@/assets/icons/meta.svg" class="h-10 w-10" alt="" />
-            <h1 class="text-xl font-semibold ml-4">Meta Platform</h1>
-          </div>
-
-          <h2 class="italic text-lg">from 2019 to 2014</h2>
-          <div class="inline mt-5">
-            <span
-              class="font-semibold relative z-0 before:content-[''] before:-z-10 before:absolute before:left-2 before:bottom-0 before:w-full before:h-3 before:bg-gradient-to-r before:from-cyan-500 before:to-blue-500"
-              >Software Engineer</span
-            >
-            -
-            <span>Software development in clients custom project</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- card -->
-      <div
-        class="bg-black min-w-sm max-w-md flex items-center text-white p-4 mt-20 rounded-md"
-      >
-        <div class="flex flex-col">
-          <div
-            class="flex items-center bg-gradient-to-r from-red-500 to-pink-500 p-1 rounded-lg"
-          >
-            <img src="@/assets/icons/vue.svg" class="h-10 w-10" alt="" />
-            <h1 class="text-xl font-semibold">Google Inc.</h1>
-          </div>
-
-          <h2 class="italic text-lg">2019 - Current</h2>
-          <div class="inline mt-5">
-            <span
-              class="font-semibold relative z-0 before:content-[''] before:-z-10 before:absolute before:left-2 before:bottom-0 before:w-full before:h-3 before:bg-gradient-to-r before:from-cyan-500 before:to-blue-500"
-              >Software Engineer</span
-            >
-            -
-            <span>Software development in clients custom project</span>
+            <span>{{ work.description }}</span>
           </div>
         </div>
       </div>

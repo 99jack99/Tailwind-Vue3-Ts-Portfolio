@@ -28,7 +28,7 @@
 
     <router-link
       to="/"
-      class="border-2 border-black w-full h-20 sm:w-80 order-first sm:order-none bg-[url(../assets/imgs/guy.jpg)] bg-cover bg-center"
+      class="border-2 border-black w-full h-20 sm:w-80 order-first sm:order-none bg-[url(../assets/imgs/jackjack.png)] bg-cover bg-center"
     >
       <!-- class="h-4/5 bg-[url(../assets/imgs/per.jpg)] bg-cover bg-right border-4" -->
     </router-link>

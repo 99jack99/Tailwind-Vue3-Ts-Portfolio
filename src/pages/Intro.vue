@@ -48,11 +48,11 @@
     >
       <div class="h-96 w-80">
         <div
-          class="h-4/5 bg-[url(../assets/imgs/lucas.jpg)] bg-cover bg-right rounded-sm"
+          class="h-4/5 border-2 bg-[url(../assets/imgs/jackson-normal-unedited.png)] bg-cover bg-right rounded-sm"
         ></div>
         <div class="h-1/5 flex flex-col justify-center p-1 mt-4">
-          <div class="text-2xl font-semibold">Lucas Drove</div>
-          <div class="text-2xl font-thin">27, Front-end Developer</div>
+          <div class="text-2xl font-semibold">Jackson Almeida</div>
+          <div class="text-2xl font-thin">25, Front-end Developer</div>
         </div>
       </div>
 
@@ -61,21 +61,21 @@
           class="bg-black border-4 border-black h-32 flex items-center justify-start cursor-crosshair"
         >
           <h1 class="text-5xl sm:text-6xl font-semibold ml-4 text-white">
-            VIDEOGAMES*
+            DESIGN*
           </h1>
         </div>
         <div
           class="bg-black border-4 border-black h-32 my-10 flex items-center justify-start cursor-crosshair"
         >
           <h1 class="text-5xl sm:text-6xl font-semibold ml-4 text-white">
-            SPORTS*
+            DEVELOPMENT*
           </h1>
         </div>
         <div
           class="bg-black border-4 border-black h-32 flex items-center justify-start cursor-crosshair"
         >
           <h1 class="text-5xl sm:text-6xl font-semibold ml-4 text-white">
-            LEARNING*
+            CODE MAINTAINABILITY*
           </h1>
         </div>
       </div>
