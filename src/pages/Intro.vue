@@ -1,4 +1,21 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+
+let keywords = ref([
+  {
+    id: 1,
+    name: 'Features Development'
+  },
+  {
+    id: 2,
+    name: 'UI/UX'
+  },
+  {
+    id: 3,
+    name: 'Code maintanability'
+  }
+])
+</script>
 
 <template>
   <div
@@ -23,7 +40,7 @@
         </div>
       </div>
 
-      <div class="w-full h-96 relative text-white">
+      <div class="w-full h-96 relative text-white mt-10 md:mt-0">
         <video
           class="border-4 rounded-sm border-black grayscale absolute top-0 left-0 ml-[20%] h-96 opacity-90"
           autoplay
@@ -37,14 +54,16 @@
         <h1 class="absolute top-12 right-8 ml-10 text-6xl text-[#a32404]">
           is
         </h1>
-        <h1 class="absolute top-16 right-16 ml-12 text-8xl text-black">
+        <h1
+          class="absolute top-16 right-2 md:right-16 ml-12 text-8xl text-black"
+        >
           Better
         </h1>
       </div>
     </div>
 
     <div
-      class="flex flex-col items-center sm:flex-row justify-around sm:items-start w-full mt-5 sm:mt-20"
+      class="flex flex-col items-center sm:flex-row justify-around sm:items-start w-full mt-20 md:mt-20"
     >
       <div class="h-96 w-80">
         <div
@@ -56,27 +75,19 @@
         </div>
       </div>
 
-      <div class="flex flex-col sm:w-3/4 mt-20 sm:mt-0 px-10">
+      <div class="flex flex-col mt-10 md:mt-0">
         <div
-          class="bg-black border-4 border-black h-32 flex items-center justify-start cursor-crosshair"
+          class="flex flex-col w-full mt-10 md:mt-0 md:mb-5 px-0"
+          v-for="words in keywords"
+          :key="words.id"
         >
-          <h1 class="text-5xl sm:text-6xl font-semibold ml-4 text-white">
-            DESIGN*
-          </h1>
-        </div>
-        <div
-          class="bg-black border-4 border-black h-32 my-10 flex items-center justify-start cursor-crosshair"
-        >
-          <h1 class="text-5xl sm:text-6xl font-semibold ml-4 text-white">
-            DEVELOPMENT*
-          </h1>
-        </div>
-        <div
-          class="bg-black border-4 border-black h-32 flex items-center justify-start cursor-crosshair"
-        >
-          <h1 class="text-5xl sm:text-6xl font-semibold ml-4 text-white">
-            CODE MAINTAINABILITY*
-          </h1>
+          <div
+            class="bg-black border-black p-6 flex items-center justify-start cursor-crosshair"
+          >
+            <h1 class="text-3xl md:text-6xl font-semibold ml-4 text-white">
+              {{ words.name }} *
+            </h1>
+          </div>
         </div>
       </div>
     </div>

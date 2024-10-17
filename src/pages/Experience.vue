@@ -37,28 +37,33 @@ let experiences = ref([
     <div class="flex flex-col justify-center items-center w-full">
       <!-- CARD -->
       <div
-        class="min-w-sm max-w-md flex items-center mt-20 p-5 border-4 border-black text-black"
+        class="max-w-3xl flex items-center mt-20 p-5 border-4 border-black text-black hover:bg-black hover:text-white hover:rounded-lg duration-300"
         v-for="work in experiences"
         :key="work.id"
       >
         <div class="flex flex-col">
-          <div
-            class="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 p-1 rounded-lg"
-          >
-            <img :src="work.image" class="h-10 w-10" alt="" />
-            <h1 class="text-xl font-semibold ml-4">{{ work.name }}</h1>
+          <div class="flex justify-between">
+            <div>
+              <div
+                class="flex items-center w-max bg-gradient-to-r from-cyan-500 to-blue-500 px-4 py-1 rounded-md"
+              >
+                <h1 class="text-xl font-semibold">{{ work.name }}</h1>
+              </div>
+
+              <h2 class="text-lg">
+                from {{ work.date[0] }} till {{ work.date[1] }}
+              </h2>
+            </div>
+            <div><img :src="work.image" class="max-h-20 w-20" alt="" /></div>
           </div>
 
-          <h2 class="italic text-lg">
-            from {{ work.date[0] }} till {{ work.date[1] }}
-          </h2>
-          <div class="inline mt-5">
-            <span
-              class="font-semibold relative z-0 before:content-[''] before:-z-10 before:absolute before:left-2 before:bottom-0 before:w-full before:h-3 before:bg-gradient-to-r before:from-cyan-500 before:to-blue-500"
-              >{{ work.position }}</span
+          <div class="mt-10">
+            <p
+              class="font-semibold relative z-0 before:content-[''] before:-z-10 before:absolute before:left-0 before:bottom-0 before:w-40 before:h-3 before:bg-gradient-to-r before:from-cyan-500 before:to-blue-500"
             >
-            -
-            <span>{{ work.description }}</span>
+              {{ work.position }}
+            </p>
+            <p class="mt-5">{{ work.description }}</p>
           </div>
         </div>
       </div>

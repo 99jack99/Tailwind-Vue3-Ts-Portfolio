@@ -3,15 +3,15 @@
 <template>
   <div class="container-fluid h-screen flex flex-col">
     <div
-      class="border-4 border-black w-full h-fit p-5 text-7xl sm:text-9xl font-semibold font-organical"
+      class="border-black w-full h-fit p-5 text-7xl sm:text-9xl font-semibold font-organical"
     >
       Lets connect!
     </div>
-    <div class="flex-col h-full md:flex md:flex-row">
+    <div class="flex flex-col h-full md:flex-row">
       <div
-        class="border-4 border-black w-1/2 p-5 flex flex-col items-start bg-amber-400 pl-20 pt-20"
+        class="border-2 border-black w-full md:w-1/2 flex flex-col items-start p-20 bg-amber-400"
       >
-        <h1 class="text-5xl underline underline-offset-4">
+        <h1 class="text-4xl underline underline-offset-4">
           Dont be shy! Talk to me
         </h1>
 
@@ -46,10 +46,10 @@
         </div>
       </div>
       <div
-        class="border-4 border-black text-white bg-black flex flex-col w-1/2 pl-20 pt-20"
+        class="border-black text-white bg-black flex flex-col items-start p-20 w-full md:w-1/2"
       >
         <div class="flex flex-col">
-          <h1 class="text-5xl underline underline-offset-4">Socials</h1>
+          <h1 class="text-4xl underline underline-offset-4">Socials</h1>
           <div class="flex mt-8">
             <img
               src="@/assets/icons/linkedin.svg"
@@ -60,7 +60,7 @@
         </div>
 
         <div class="flex flex-col mt-10">
-          <h1 class="text-5xl underline underline-offset-4">Links</h1>
+          <h1 class="text-4xl underline underline-offset-4">Links</h1>
           <div class="flex mt-8">
             <img
               src="@/assets/icons/github.svg"

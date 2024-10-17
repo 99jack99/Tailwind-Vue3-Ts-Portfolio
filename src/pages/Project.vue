@@ -47,13 +47,18 @@ let techs = ref([
 </script>
 
 <template>
-  <div class="container-fluid min-h-screen flex">
-    <div class="w-1/2 p-10 flex flex-col">
-      <video class="m-5 border-4 border-black grayscale" autoplay muted loop>
+  <div class="container-fluid min-h-screen flex-col flex md:flex-row">
+    <div class="w-full md:w-1/2 p-4 md:p-10 flex flex-col items-center">
+      <video
+        class="m-0 md:m-5 border-4 border-black grayscale"
+        autoplay
+        muted
+        loop
+      >
         <source src="@/assets/imgs/skate.mp4" type="video/mp4" />
       </video>
 
-      <div class="mt-20 m-5 flex flex-wrap items-center gap-x-5">
+      <div class="mt-10 md:mt-20 m-5 flex items-center gap-x-5">
         <img
           v-for="tech in techs"
           :key="tech.id"
@@ -61,15 +66,13 @@ let techs = ref([
           class="p-2 max-h-16 hover:scale-125 duration-200"
           :alt="tech.name"
         />
-        <!--         <img src="@/assets/imgs/figma.png" class="w-48 mr-3" alt="" />
-        <img src="@/assets/imgs/figma.png" class="w-48 mr-3" alt="" />
-        <img src="@/assets/imgs/figma.png" class="w-48 mr-3" alt="" />
-        <img src="@/assets/imgs/figma.png" class="w-48 mr-3" alt="" /> -->
       </div>
     </div>
-    <div class="w-1/2 p-10 flex flex-col">
+    <div class="w-full md:w-1/2 p-10 flex flex-col">
       <div class="border-b-2 border-black py-3">
-        <h1 class="text-2xl uppercase">Some of my projects</h1>
+        <h1 class="text-6xl md:text-4xl uppercase font-organical">
+          Some of my projects
+        </h1>
       </div>
 
       <div class="flex flex-col">
@@ -79,11 +82,11 @@ let techs = ref([
           :key="project.id"
         >
           <h1
-            class="text-5xl hover:underline hover:text-blue-600 cursor-pointer"
+            class="text-3xl md:text-5xl hover:underline hover:text-blue-600 cursor-pointer"
           >
             {{ project.name }}
           </h1>
-          <div class="flex text-xl mt-5">
+          <div class="flex text-xl mt-2 md:mt-5">
             <div
               class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5"
               v-for="techs in project.techs"
