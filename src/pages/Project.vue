@@ -47,10 +47,10 @@ let techs = ref([
 </script>
 
 <template>
-  <div class="container-fluid min-h-screen flex-col flex md:flex-row">
-    <div class="w-full md:w-1/2 p-4 md:p-10 flex flex-col items-center">
+  <div class="container-fluid lg:min-h-screen flex-col flex lg:flex-row">
+    <div class="w-full lg:w-1/2 p-4 lg:p-10 flex flex-col items-center">
       <video
-        class="m-0 md:m-5 border-4 border-black grayscale"
+        class="m-0 lg:m-5 border-4 border-black grayscale"
         autoplay
         muted
         loop
@@ -58,7 +58,7 @@ let techs = ref([
         <source src="@/assets/imgs/skate.mp4" type="video/mp4" />
       </video>
 
-      <div class="mt-10 md:mt-20 m-5 flex items-center gap-x-5">
+      <div class="mt-10 lg:mt-20 m-5 flex items-center gap-x-5">
         <img
           v-for="tech in techs"
           :key="tech.id"
@@ -68,9 +68,9 @@ let techs = ref([
         />
       </div>
     </div>
-    <div class="w-full md:w-1/2 p-10 flex flex-col">
+    <div class="w-full lg:w-1/2 p-10 flex flex-col">
       <div class="border-b-2 border-black py-3">
-        <h1 class="text-6xl md:text-4xl uppercase font-organical">
+        <h1 class="text-6xl lg:text-4xl uppercase font-organical">
           Some of my projects
         </h1>
       </div>
@@ -82,11 +82,11 @@ let techs = ref([
           :key="project.id"
         >
           <h1
-            class="text-3xl md:text-5xl hover:underline hover:text-blue-600 cursor-pointer"
+            class="text-3xl lg:text-5xl hover:underline hover:text-blue-600 cursor-pointer"
           >
             {{ project.name }}
           </h1>
-          <div class="flex text-xl mt-2 md:mt-5">
+          <div class="flex text-xl mt-2 lg:mt-5">
             <div
               class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5"
               v-for="techs in project.techs"

@@ -1,15 +1,15 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="container-fluid h-screen flex flex-col">
+  <div class="container-fluid lg:h-screen flex flex-col">
     <div
-      class="border-black w-full h-fit p-5 text-7xl sm:text-9xl font-semibold font-organical"
+      class="border-black w-full h-fit p-5 text-7xl lg:text-9xl font-semibold font-organical"
     >
       Lets connect!
     </div>
-    <div class="flex flex-col h-full md:flex-row">
+    <div class="flex flex-col h-full lg:flex-row">
       <div
-        class="border-2 border-black w-full md:w-1/2 flex flex-col items-start p-20 bg-amber-400"
+        class="border-2 border-black w-full lg:w-1/2 flex flex-col items-start p-8 lg:p-20 bg-amber-400"
       >
         <h1 class="text-4xl underline underline-offset-4">
           Dont be shy! Talk to me
@@ -46,7 +46,7 @@
         </div>
       </div>
       <div
-        class="border-black text-white bg-black flex flex-col items-start p-20 w-full md:w-1/2"
+        class="border-black text-white bg-black flex flex-col items-start p-8 lg:p-20 w-full lg:w-1/2"
       >
         <div class="flex flex-col">
           <h1 class="text-4xl underline underline-offset-4">Socials</h1>
@@ -71,7 +71,7 @@
         </div>
 
         <div class="flex flex-col mt-20">
-          <h1 class="text-2xl">Made by me, myself. You can steal my work</h1>
+          <h1 class="text-2xl">@Jackson Almeida - 2023</h1>
         </div>
       </div>
     </div>
