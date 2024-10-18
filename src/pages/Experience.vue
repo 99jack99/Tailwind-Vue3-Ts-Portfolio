@@ -1,30 +1,29 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-
 let experiences = ref([
   {
     id: 1,
     name: 'Company 1',
-    date: ['2021', '2019'],
+    date: ['2019', '2021'],
     position: 'Frontend developer',
     description: 'Development of different features, and design systems',
-    image: '/src/assets/icons/google.svg'
+    image: '/src/assets/icons/companies/company.svg'
   },
   {
     id: 2,
     name: 'Company 2',
-    date: ['2019', '2017'],
+    date: ['2017', '2019'],
     position: 'Frontend developer',
     description: 'Development of different features, and design systems',
-    image: '/src/assets/icons/google.svg'
+    image: '/src/assets/icons/companies/company.svg'
   },
   {
     id: 3,
     name: 'Company 3',
-    date: ['2017', '2013'],
+    date: ['2013', '2017'],
     position: 'Frontend developer',
     description: 'Development of different features, and design systems',
-    image: '/src/assets/icons/google.svg'
+    image: '/src/assets/icons/companies/company.svg'
   }
 ])
 </script>
@@ -70,5 +69,3 @@ let experiences = ref([
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped></style>

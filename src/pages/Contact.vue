@@ -1,18 +1,17 @@
 <script setup lang="ts"></script>
-
 <template>
   <div class="container-fluid lg:h-screen flex flex-col">
     <div
       class="border-black w-full h-fit p-5 text-7xl lg:text-9xl font-semibold font-organical"
     >
-      Lets connect!
+      Let's connect!
     </div>
     <div class="flex flex-col h-full lg:flex-row">
       <div
         class="border-2 border-black w-full lg:w-1/2 flex flex-col items-start p-8 lg:p-20 bg-amber-400"
       >
         <h1 class="text-4xl underline underline-offset-4">
-          Dont be shy! Talk to me
+          Want to talk to me? Don't be shy!
         </h1>
 
         <div class="flex flex-col mt-10">
@@ -77,5 +76,3 @@
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped></style>

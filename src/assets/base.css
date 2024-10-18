@@ -2,20 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'linked';
-  src: url('@/assets/fonts/linked.otf');
-}
 
 @font-face {
   font-family: 'space';
   src: url('@/assets/fonts/space.ttf');
 }
 
-@font-face {
-  font-family: 'chalmone';
-  src: url('@/assets/fonts/chalmone.ttf');
-}
 
 @font-face {
   font-family: 'organical';

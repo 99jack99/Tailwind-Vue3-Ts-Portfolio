@@ -1,27 +1,19 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-
 let projects = ref([
   {
     id: 1,
-    name: 'Multi-disciplinar TO-DO App',
-    techs: ['Javascript', 'HTML'],
+    name: 'Example TO-DO App',
+    techs: ['Angular', 'Typescript', 'Tailwind'],
     ref: 'github.com'
   },
   {
     id: 2,
-    name: 'Mira',
-    techs: ['Javascript', 'HTML'],
-    ref: 'github.com'
-  },
-  {
-    id: 3,
-    name: 'Hey hola',
-    techs: ['Javascript', 'HTML'],
+    name: 'Example project',
+    techs: ['Vue', 'Javascript', 'HTML', 'SASS'],
     ref: 'github.com'
   }
 ])
-
 let techs = ref([
   {
     id: 1,
@@ -35,11 +27,16 @@ let techs = ref([
   },
   {
     id: 3,
+    name: 'Angular',
+    image: '/src/assets/icons/js.svg'
+  },
+  {
+    id: 4,
     name: 'Typescript',
     image: '/src/assets/icons/typescript.svg'
   },
   {
-    id: 4,
+    id: 5,
     name: 'Tailwind',
     image: '/src/assets/icons/tailwind.svg'
   }
@@ -55,7 +52,7 @@ let techs = ref([
         muted
         loop
       >
-        <source src="@/assets/imgs/skate.mp4" type="video/mp4" />
+        <source src="@/assets/videos/skate.mp4" type="video/mp4" />
       </video>
 
       <div class="mt-10 lg:mt-20 m-5 flex items-center gap-x-5">
@@ -75,85 +72,29 @@ let techs = ref([
         </h1>
       </div>
 
-      <div class="flex flex-col">
-        <div
-          class="flex flex-col mt-20"
-          v-for="project in projects"
-          :key="project.id"
-        >
-          <h1
-            class="text-3xl lg:text-5xl hover:underline hover:text-blue-600 cursor-pointer"
+      <div class="flex flex-col h-full justify-between">
+        <div>
+          <div
+            class="flex flex-col items-start mt-20"
+            v-for="project in projects"
+            :key="project.id"
           >
-            {{ project.name }}
-          </h1>
-          <div class="flex text-xl mt-2 lg:mt-5">
-            <div
-              class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5"
-              v-for="techs in project.techs"
-              :key="techs"
+            <h1
+              class="text-3xl lg:text-5xl hover:underline hover:text-blue-600 cursor-pointer"
             >
-              {{ techs }}
+              {{ project.name }}
+            </h1>
+            <div class="flex text-xl mt-2 lg:mt-5">
+              <div
+                class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5"
+                v-for="techs in project.techs"
+                :key="techs"
+              >
+                {{ techs }}
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- <div class="flex flex-col mt-20">
-          <h1
-            class="text-5xl hover:underline hover:text-blue-600 cursor-pointer"
-          >
-            Portfolio
-          </h1>
-          <div class="flex text-xl mt-5">
-            <div class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5">
-              Vue
-            </div>
-            <div class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5">
-              Tailwind
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-col mt-20">
-          <h1
-            class="text-5xl hover:underline hover:text-blue-600 cursor-pointer"
-          >
-            Landing Home Ensurance
-          </h1>
-          <div class="flex text-xl mt-5">
-            <div class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5">
-              Javascript
-            </div>
-            <div class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5">
-              HTML
-            </div>
-            <div class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5">
-              CSS
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-col mt-20">
-          <h1
-            class="text-5xl hover:underline hover:text-blue-600 cursor-pointer"
-          >
-            Modern dashboard UI
-          </h1>
-          <div class="flex text-xl mt-5">
-            <div class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5">
-              Vue
-            </div>
-            <div class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5">
-              Vuetify
-            </div>
-            <div class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5">
-              Typescript
-            </div>
-            <div class="px-4 py-2 bg-slate-100 rounded-md text-zinc-700 mr-5">
-              Vitest
-            </div>
-          </div>
-        </div> -->
-
         <div class="border-t-2 border-black mt-20 py-3">
           <h1 class="text-2xl">You can find more in my Github</h1>
         </div>
@@ -161,5 +102,3 @@ let techs = ref([
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped></style>

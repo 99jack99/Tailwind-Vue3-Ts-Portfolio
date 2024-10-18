@@ -18,19 +18,10 @@
       >PROJECTS</router-link
     >
 
-    <!-- LOGO -->
-    <!-- <router-link
-      to="/"
-      class="px-4 py-4 border-2 border-black bg-black w-full sm:w-80 order-first sm:order-none"
-    >
-      <img src="@/assets/imgs/guy.jpg" class="object-cover" />
-    </router-link> -->
-
     <router-link
       to="/"
-      class="border-2 border-black w-full h-14 md:h-20 md:w-80 order-first sm:order-none bg-[url(../assets/imgs/jackjack.png)] bg-cover bg-center"
+      class="border-2 border-black w-full h-14 md:h-20 md:w-80 order-first sm:order-none bg-[url(../assets/imgs/myself.png)] bg-cover bg-center"
     >
-      <!-- class="h-4/5 bg-[url(../assets/imgs/per.jpg)] bg-cover bg-right border-4" -->
     </router-link>
 
     <!-- EXPERIENCE -->

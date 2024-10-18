@@ -7,9 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        linked: ['linked'],
         space: ["space"],
-        chalmone: ['chalmone'],
         organical: ['organical']
       },
     },
