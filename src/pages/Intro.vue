@@ -27,12 +27,12 @@ let keywords = ref([
     <div
       class="flex flex-col lg:flex-row w-full mt-20 bg-[url(../assets/imgs/espiral.jpg)] bg-cover bg-right py-10 border-4 border-black px-5 rounded-sm"
     >
-      <div class="text-2xl font-semibold w-full lg:w-2/3">
-        "Programming has been an exciting journey, where I discovered my passion
-        for web development. I've enjoyed transforming ideas into functional web
-        pages, learning how the creative process of building a website reflects
-        the underlying product vision and its purpose."
-        <div class="mt-10 mx-10 text-normal text-gray-800">
+      <div class="text-2xl indent-6 font-semibold w-full lg:w-2/3">
+        Programming has been an exciting journey where I discovered my passion
+        for web development. I've enjoyed transforming ideas and learning how
+        the creative process of building a website reflects the underlying
+        product vision.
+        <div class="mt-10 indent-6 text-xl text-normal text-gray-800">
           “If you can do what you do best and be happy, you are further along in
           life than most people.”
         </div>
