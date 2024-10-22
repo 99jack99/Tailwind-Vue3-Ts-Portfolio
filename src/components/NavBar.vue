@@ -20,7 +20,7 @@
 
     <router-link
       to="/"
-      class="border-2 border-black w-full h-14 md:h-20 md:w-80 order-first sm:order-none bg-[url(../assets/imgs/myself.png)] bg-cover bg-center"
+      class="border-2 border-black w-full h-14 md:h-20 md:w-80 order-first sm:order-none bg-[url(@/assets/imgs/myself.png)] bg-cover bg-center"
     >
     </router-link>
 
