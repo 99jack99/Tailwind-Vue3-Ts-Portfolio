@@ -7,15 +7,18 @@ let experiences = ref([
     date: ['2019', '2021'],
     position: 'Frontend developer',
     description: 'Development of different features, and design systems',
-    image: '/src/assets/icons/companies/company.svg'
+    image: new URL('/src/assets/icons/companies/company.svg', import.meta.url)
+      .href
   },
+
   {
     id: 2,
     name: 'Company 2',
     date: ['2017', '2019'],
     position: 'Frontend developer',
     description: 'Development of different features, and design systems',
-    image: '/src/assets/icons/companies/company.svg'
+    image: new URL('/src/assets/icons/companies/company.svg', import.meta.url)
+      .href
   },
   {
     id: 3,
@@ -23,7 +26,8 @@ let experiences = ref([
     date: ['2013', '2017'],
     position: 'Frontend developer',
     description: 'Development of different features, and design systems',
-    image: '/src/assets/icons/companies/company.svg'
+    image: new URL('/src/assets/icons/companies/company.svg', import.meta.url)
+      .href
   }
 ])
 </script>
